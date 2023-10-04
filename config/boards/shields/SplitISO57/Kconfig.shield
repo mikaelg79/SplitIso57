@@ -1,0 +1,5 @@
+config SHIELD_SPLITISO57_LEFT
+    def_bool $(shields_list_contains,SplitISO57_left)
+
+config SHIELD_SPLITISO57_RIGHT
+    def_bool $(shields_list_contains,SplitISO57_right)
