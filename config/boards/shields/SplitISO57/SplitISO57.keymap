@@ -30,12 +30,12 @@
 
         function_layer {
             bindings = <
-//  Column:    | 01        | 02       | 03         | 04          | 05          | 06     | 07    |---| 08      | 09     | 10       | 11        | 12           | 13              | 14          |
-                &none       &kp F1     &kp F2        &kp F3        &kp F4        &kp F5  &kp F6      &kp F7     &kp F8  &kp F9     &kp F10     &kp F11        &kp F12           &kp DELETE
-                &none       &none      &none         &none         &none         &none   &none       &none      &none   &none      &none       &none          &none             &none
-                &none       &none      &none         &none         &none         &none   &none       &none      &none   &none      &none       &none          &none             &none
-                &none       &none      &none         &none         &none         &none   &bt BT_CLR  &none      &none   &none      &none       &none          &kp PG_UP         &none
-                &trans      &none      &none         &none         &none         &none               &none      &none       &kp HOME       &kp PG_DN         &kp END
+//  Column:    | 01           | 02          | 03         | 04          | 05          | 06     | 07    |---| 08      | 09     | 10       | 11        | 12           | 13              | 14          |
+                &kp PSCRN      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5  &kp F6      &kp F7     &kp F8  &kp F9     &kp F10     &kp F11        &kp F12           &kp DELETE
+                &none          &kp C_VOL_UP  &none         &none         &none         &none   &none       &none      &none   &none      &none       &none          &none             &none
+                &kp C_AL_CALC  &kp C_VOL_DN  &none         &none         &none         &none   &none       &none      &none   &none      &none       &none          &none             &none
+                &none          &kp C_MUTE    &none         &none         &none         &none   &bt BT_CLR  &none      &none   &none      &none       &none          &kp PG_UP         &none
+                &trans         &none      &none         &none         &none         &none               &none      &none       &kp HOME       &kp PG_DN         &kp END
             >;
         };
     };
