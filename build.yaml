@@ -1,5 +1,5 @@
 include:
   - board: nice_nano_v2
     shield: SplitISO57_left
-#  - board: nice_nano_v2
-#    shield: SplitISO57_right
+  - board: nice_nano_v2
+    shield: SplitISO57_right

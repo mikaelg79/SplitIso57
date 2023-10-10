@@ -11,31 +11,31 @@
     keymap {
         compatible = "zmk,keymap";
 
-// |  ESC  |   1   |   2   |   3   |   4   |   5   |   6   |---|   7   |   8   |   9   |   0   |   +   |   ´   | BckSp |
-// |  Tab  |  ¨ ^  |   Q   |   W   |   E   |   R   |   T   |---|   Y   |   U   |   I   |   O   |   P   |   Å   | Enter |
-// | CpLck |  ' *  |   A   |   S   |   D   |   F   |   G   |---|   H   |   J   |   K   |   L   |   Ö   |   Ä   | Enter |
-// | Shift |  < >  |   Z   |   X   |   C   |   V   |   B   |---|   N   |   M   |  , ;  |  . :  |  - _  |   Up  | Shift |
-// |   Fn   |   Ctrl  |   Win   |   Alt    |     Space     |---|     Space     | AltGr |  Ctrl |  Left |  Down | Right |
+//  | ESC       |   1       |   2       |   3       |   4       |   5       |   6       |---|   7       |   8       |   9       |   0       |   +       |   ´       | BckSp     |
+//  | Tab       |  ¨ ^      |   Q       |   W       |   E       |   R       |   T       |---|   Y       |   U       |   I       |   O       |   P       |   Å       | Enter     |
+//  | CapsLock  |  ' *      |   A       |   S       |   D       |   F       |   G       |---|   H       |   J       |   K       |   L       |   Ö       |   Ä       | Enter     |
+//  | Shift     |  < >      |   Z       |   X       |   C       |   V       |   B       |---|   N       |   M       |  , ;      |  . :      |  - _      |   Up      | Shift     |
+//  | Fn           |  Ctrl        |   Win        |   Alt        |         Space         |---|         Space         | AltGr     |  Ctrl     |  Left     |  Down     | Right     |
 
         default_layer {
             bindings = <
-//  Column:    | 01        | 02       | 03      | 04      | 05    | 06    | 07    |---| 08       | 09    | 10       | 11        | 12           | 13        | 14          |
-                &kp ESC     &kp N1     &kp N2    &kp N3    &kp N4  &kp N5  &kp N6      &kp N7     &kp N8   &kp N9     &kp N0      &kp MINUS      &kp EQUAL  &kp BACKSPACE
-                &kp TAB     &kp RBKT   &kp Q     &kp W     &kp E   &kp R   &kp T       &kp Y      &kp U    &kp I      &kp O       &kp P          &kp LBKT   &kp ENTER
-                &kp CAPS    &kp BSLH   &kp A     &kp S     &kp D   &kp F   &kp G       &kp H      &kp J    &kp K      &kp L       &kp SEMICOLON  &kp APOS
-                &kp LSHIFT  &kp NUBS   &kp Z     &kp X     &kp C   &kp V   &kp B       &kp N      &kp M    &kp COMMA  &kp PERIOD  &kp SLASH      &kp UP     &kp RSHIFT
-                &mo FUNCTN  &kp LCTRL  &kp LWIN  &kp LALT          &kp SPACE           &kp SPACE           &kp RALT   &kp RCTRL   &kp LEFT       &kp DOWN   &kp RIGHT
+//  Column:    | 01            | 02            | 03            | 04            | 05            | 06            | 07        |---| 08            | 09            | 10            | 11            | 12            | 13            | 14           |
+                &kp ESC         &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &kp MINUS       &kp EQUAL       &kp BACKSPACE
+                &kp TAB         &kp RBKT        &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &kp LBKT        &kp ENTER
+                &kp CAPS        &kp BSLH        &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L           &kp SEMICOLON   &kp APOS
+                &kp LSHIFT      &kp NUBS        &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           kp M            &kp COMMA       &kp PERIOD      &kp SLASH       &kp UP          &kp RSHIFT
+                &mo FUNCTN      &kp LCTRL       &kp LWIN        &kp LALT                        &kp SPACE                       &kp SPACE                       &kp RALT        &kp RCTRL       &kp LEFT        &kp DOWN        &kp RIGHT
             >;
         };
 
         function_layer {
             bindings = <
-//  Column:    | 01           | 02          | 03         | 04          | 05          | 06     | 07    |---| 08      | 09     | 10       | 11        | 12           | 13              | 14          |
-                &kp PSCRN      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5  &kp F6      &kp F7     &kp F8  &kp F9     &kp F10     &kp F11        &kp F12           &kp DELETE
-                &none          &kp C_VOL_UP  &none         &none         &none         &none   &none       &none      &none   &none      &none       &none          &none             &none
-                &kp C_AL_CALC  &kp C_VOL_DN  &none         &none         &none         &none   &none       &none      &none   &none      &none       &none          &none             &none
-                &none          &kp C_MUTE    &none         &none         &none         &none   &bt BT_CLR  &none      &none   &none      &none       &none          &kp PG_UP         &none
-                &trans         &none      &none         &none         &none         &none               &none      &none       &kp HOME       &kp PG_DN         &kp END
+//  Column:    | 01           | 02            | 03            | 04             | 05            | 06            | 07        |---| 08            | 09            | 10            | 11            | 12            | 13            | 14           |
+                &kp PSCRN       &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12         &kp DELETE
+                &none           &kp C_VOL_UP    &none           &none           &none           &none           &none           &bt BT_SEL 2    &none           &none           &none           &none           &none           &none
+                &kp C_AL_CALC   &kp C_VOL_DN    &none           &none           &none           &none           &none           &bt BT_SEL 1    &none           &none           &none           &none           &none           &none
+                &none           &kp K_MUTE      &none           &none           &none           &none           &bt BT_CLR      &bt BT_SEL 0    &none           &none           &none           &none           &kp PG_UP       &none
+                &trans          &none           &none           &none                           &none                           &none                           &none           &none           &kp HOME        &kp PG_DN       &kp END
             >;
         };
     };
